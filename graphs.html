@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Graphs Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Oxanium&display=swap" rel="stylesheet">
+    <link rel='icon' href='Images/bike.png' type='image/x-icon'/>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  </head>
+  <body>
+
+    <div class="row nav">
+      <nav>
+        <ul>
+          <a class="logo-text" href="index.html">Cylcing Calculator</a>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="graphs.html">Graphs</a></li>
+          <li><a href="about.html">About</a></li>
+          <ion-icon id="mobile-icon" name="reorder-four-outline"></ion-icon>
+        </ul>
+      </nav>
+    </div>
+
+    <h1>Graphs for physics</h1>
+
+    <div class="section group input-data">
+      <div class="col span_1_of_4">
+    	  <label for="text6">Distance (s):</label>
+    	</div>
+    	<div class="col span_1_of_4">
+    	 <input type="number" autocomplete="off" id="distance" value="">
+    	</div>
+      <div class="col span_1_of_4">
+    	  <label for="text6">Time (t):</label>
+    	</div>
+    	<div class="col span_1_of_4">
+    	 <input type="number" autocomplete="off" id="time" value="">
+    	</div>
+    </div>
+
+    <div class="section group">
+    	<div class="col span_1_of_4">
+        <button type="sumbit" class="button-calculate" id="button" name="button">Set values</button>
+    	</div>
+    </div>
+
+    <div class="canvas-container" id="canvas-container">
+      <canvas id="myChart"></canvas>
+    </div>
+
+    <script src="generic.js" charset="utf-8"></script>
+    <script src="graphs.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  </body>
+</html>

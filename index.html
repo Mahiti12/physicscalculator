@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Cycling calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Oxanium&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel='icon' href='Images/bike.png' type='image/x-icon'/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="row nav">
+    <nav>
+      <ul>
+        <a class="logo-text" href="index.html">Cylcing Calculator</a>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="graphs.html">Graphs</a></li>
+        <li><a href="about.html">About</a></li>
+        <ion-icon id="mobile-icon" name="reorder-four-outline"></ion-icon>
+      </ul>
+    </nav>
+  </div>
+  <h1>Calculator for cycling things</h1>
+  <h2>Calculate how many joules you need</h2>
+
+  <div class="section group">
+  	<div class="col span_1_of_4">
+  	  <label for="yourWeight">Your weight (kg):</label>
+  	</div>
+  	<div class="col span_1_of_4">
+  	  <input type="number" autocomplete="off" id="yourWeight" name="yourWeight" value="">
+  	</div>
+  	<div class="col span_1_of_4">
+       <label for="bikeWeight">Bike weight (kg):</label>
+  	</div>
+  	<div class="col span_1_of_4">
+      <input type="number" autocomplete="off" id="bikeWeight" name="bikeWeight" value="">
+  	</div>
+  </div>
+
+  <div class="section group">
+  	<div class="col span_1_of_4">
+  	  <label for="text4">Begining speed (km/h):</label>
+  	</div>
+  	<div class="col span_1_of_4">
+  	 <input type="number" autocomplete="off" id="beginingSpeed" name="text4" value="">
+  	</div>
+  	<div class="col span_1_of_4">
+      <label for="text5">Final speed (km/h):</label>
+  	</div>
+  	<div class="col span_1_of_4">
+      <input type="number" autocomplete="off" id="finalSpeed" name="text5" value="">
+  	</div>
+  </div>
+
+  <div class="section group">
+  	<div class="col span_1_of_4">
+  	  <label for="text6">Used joules (J):</label>
+  	</div>
+  	<div class="col span_1_of_4">
+  	 <input type="number" autocomplete="off" id="usedJoules" name="text6" value="">
+  	</div>
+  	<div class="col span_1_of_4 button-col">
+      <button type="sumbit" class="button-calculate" id="button" name="button">Calculate</button>
+  	</div>
+    <div class="col span_1_of_4 button-col">
+      <button type="submit" class="button-calculate" id="button1" name="button1">Add to table</button>
+    </div>
+  </div>
+
+  <div class="container-flud" id="container1">
+
+  </div>
+
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  <script src="generic.js" charset="utf-8"></script>
+  <script src="calculator.js" charset="utf-8"></script>
+</body>
+
+</html>
